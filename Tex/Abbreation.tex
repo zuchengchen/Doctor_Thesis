@@ -1,0 +1,249 @@
+\usepackage{tensor}     % manipulate tensors
+\usepackage{graphicx}   % include figures
+\graphicspath{{Img/}} %Setting the graphicspath
+\usepackage[
+colorlinks=true,        % color link
+citecolor=blue,         % cite color
+linkcolor=blue,         % link color
+urlcolor=blue           % url color
+]{hyperref}             % create hyperlinks
+%\usepackage{bm}         % \bm{<text>} Bold math symbols
+\usepackage{xcolor}     % textcolor
+\usepackage{cancel}     % slashes in equtions
+\usepackage{ulem}     % underline of equations
+\usepackage{amsmath}	% AMS Math Package
+\usepackage{amsthm}	% Theorem Formatting
+\usepackage{amssymb}
+\usepackage{datetime}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{verbatim}
+\usepackage{float}
+%\usepackage{bm}
+
+\newcommand{\nc}{\newcommand*}
+\nc{\newc}{\newcommand}
+\nc{\bm}[1]{\mathbf{#1}}
+\nc{\figurewidth}{3.2in}
+\nc{\xbar}{\bar{x}}
+\nc{\rhoeq}{\rho_{\rm{eq}}}
+\nc{\zeq}{z_{\rm{eq}}}
+\nc{\la}{\lambda}
+\nc{\tla}{\tilde{\la}}
+\nc{\dt}{\delta}
+\nc{\Dt}{\Delta}
+\nc{\vj}{\vec{j}}
+\nc{\vl}{\vec{l}}
+\nc{\hx}{\hat{x}}
+\nc{\hy}{\hat{y}}
+\nc{\bj}{\mathbf{j}}
+\nc{\mJ}{\mathcal{J}}
+\nc{\mP}{\mathcal{P}}
+\nc{\ga}{\gamma}
+\nc{\Msun}{M_\odot}
+\nc{\app}{\approx}
+\nc{\av}[1]{\langle #1 \rangle}
+\nc{\eq}[1]{Eq.~\eqref{#1}}
+\nc{\al}{\alpha}
+\nc{\Xstar}{X_{\ast}}
+\nc{\seq}{\sigma_{\rm{eq}}}
+\nc{\fpbh}{f_{\mathrm{PBH}}}
+\nc{\VT}{\langle VT \rangle}
+
+
+\nc{\s}{\sigma}
+\nc{\Ld}{\Lambda}
+\nc{\p}{\partial}
+\nc{\Om}{\Omega}
+\nc{\rd}{\mathrm{d}}
+\nc{\Od}{\mathcal{O}}
+
+%\nc{\ld}{\lambda}
+%\nc{\gm}{\gamma}
+\nc{\vth}{\vec{\theta}}
+\nc{\vla}{\vec{\lambda}}
+\nc{\vd}{\vec{d}}
+\nc{\Mmin}{M_{\mathrm{min}}}
+\nc{\rmd}{\mathrm{d}}
+\nc{\mmin}{{m_{\mathrm{min}}}}
+\nc{\mmax}{{m_{\mathrm{max}}}}
+\nc{\mR}{\mathcal{R}}
+\nc{\tmR}{\tilde{\mathcal{R}}}
+\nc{\ogw}{\Omega_{\mathrm{GW}}}
+\nc{\addref}{[\textcolor{red}{add ref}] }
+\nc{\gpcyr}{\mathrm{Gpc}^{-3}\,\mathrm{yr}^{-1}}
+\nc{\Eq}[1]{公式\eqref{#1}}
+\nc{\Fig}[1]{图\ref{#1}}
+\nc{\Table}[1]{表\ref{#1}}
+\nc{\lvc}{LIGO-Virgo} % LIGO-VIRGO collaboration
+\nc{\Sec}[1]{Sec.~\ref{#1}}
+\nc{\eg}{\textit{e.g.~}}
+\nc{\SNR}{\mathrm{SNR}}
+\nc{\fpbhn}{f_{\mathrm{PBH0}}}    % f_pbh
+\nc{\fmin}{{f_{\mathrm{min}}}}
+\nc{\rhoGW}{\rho_{\mathrm{GW}}}
+\nc{\Nobs}{N_{\mathrm{obs}}}
+\nc{\km}{\mathrm{km}}
+\nc{\Mpc}{\mathrm{Mpc}}
+\nc{\Tobs}{T_{\mathrm{obs}}}
+\nc{\Ntemp}{N_{\mathrm{temp}}}
+
+\nc{\mH}{\mathcal{H}}
+\nc{\cs}{c_s^2}
+\nc{\Sij}[1]{S_{ij}^{(#1)}}
+\nc{\vi}[1]{v_i^{(#1)}}
+\nc{\no}{\nonumber}
+\def\<{\left\langle}
+\def\>{\right\rangle}
+\def\ap{\alpha}
+\def\half{{1\over 2}}
+\nc{\bk}{\bm{k}}
+\nc{\bq}{\bm{q}}
+\nc{\bp}{\bm{p}}
+\nc{\bl}{\bm{l}}
+\nc{\bx}{\bm{x}}
+\nc{\be}{\mathbf{e}}
+\nc{\mS}{\mathcal{S}}
+\nc{\te}{\tilde{\eta}}
+\nc{\tp}{\tilde{p}}
+\nc{\tk}{\tilde{k}}
+\nc{\tx}{\tilde{x}}
+\nc{\tF}{\tilde{F}}
+\nc{\tA}{\tilde{A}}
+\nc{\mkpq}{|\bk-\bp-\bq|}
+\nc{\mpq}{|\bp-\bq|}
+\nc{\mkp}{|\bk-\bp|}
+\nc{\mSi}[1]{\mS^{(#1)}({\bk, \eta})}
+\nc{\vk}{\vec{k}}
+\nc{\kstar}{k_*}
+\nc{\fstar}{f_*}
+\nc{\xstar}{x_*}
+\nc{\mpbh}{m_{\rm{pbh}}}
+\nc{\bn}[1]{\dt\bm{t}_{\text{#1}}}
+\nc{\bC}[1]{\bm{C}_{\text{#1}}}
+\nc{\NTOA}{N_{\text{TOA}}}
+\nc{\Nmode}{{N_{\text{mode}}}}
+\nc{\ARN}{A_{\rm{RN}}}
+\nc{\gRN}{\gamma_{\rm{RN}}}
+\nc{\bS}{\mathbf{\Sigma}}
+\nc{\br}{\mathbf{r}}
+\nc{\bN}{\mathbf{R}}
+\nc{\TTT}{\mathrm{TT}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% greek letters %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newc{\zt}{\zeta}
+\newc{\et}{\eta}
+\newc{\ta}{\theta}
+\newc{\io}{\iota}
+\newc{\kp}{\kappa}
+\newc{\La}{\Lambda}
+\newc{\oo}{\omicron}
+\newc{\sg}{\sigma}
+\newc{\Sg}{\Sigma}
+\newc{\om}{\omega}
+\newc{\vp}{\varphi}
+\newc{\Ga}{\Gamma}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% fonts %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newc{\mc}{\mathcal}
+\newc{\ms}{\mathscr}
+\newc{\mb}{\mathbf} 
+\newc{\ie}{\textit{i.e. }}
+\newc{\etc}{\textit{etc. }}
+\newc{\etal}{\textit{et al. }}
+\newc{\lcdm}{$\Lambda$CDM}
+\newc{\gs}{\sqrt{-g}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% other %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newc{\ts}{\tensor}
+\newc{\td}{\tilde}
+\newc{\hf}{\frac{1}{2}}
+\newc{\ra}{\rightarrow}
+\newc{\Ra}{\Rightarrow}
+\newc{\lra}{\leftrightarrow}
+\newc{\Lra}{\Leftrightarrow}
+\newc{\so}{\therefore}
+\newc{\nb}{\nabla}
+\newc{\LA}{\mathop{}\!\mathbin\bigtriangleup} %Laplace
+\newc{\DA}{\mathop{}\!\mathbin\Box} %DAlambert
+\newc{\lp}{\left(} % left parenthesis
+\newc{\rp}{\right)} % right parenthesis
+\newc{\lb}{\left[} % left bracket
+\newc{\rb}{\right]} % right bracket
+\newc{\lB}{\left\{} % left Brace
+\newc{\rB}{\right\}} % right Brace
+\newc{\ef}{Eq.\eqref}
+\newc{\red}[1]{\textcolor{red}{#1}}
+\newc{\add}{\red{\emph{(add some comments or explanations)}\\}}
+%%%%%%%%%%%%%%%%%%%%%% only used in this file %%%%%%%%%%%%%%%%%%%%%%%%
+\newc{\Td}[1]{ \ts{\dt}{#1} }
+\newc{\Th}[1]{\ts{h}{#1}} % tesor h
+\newc{\h}[1]{\ts{\bar{h}}{#1}} % trace-reverse tensor
+\newc{\Tg}[1]{\ts{\ga}{#1}}
+\newc{\TG}[1]{\ts{\Ga}{#1}} % tensor \Gamma
+\newc{\Bg}{\bm{g}}
+\newc{\Bf}{\bm{f}}
+\newc{\BG}{\bm{\ga}}
+\newc{\tr}[1]{\lb #1 \rb}
+\newc{\gts}{ \sqrt{-\td{g}}}
+\newc{\nt}[1]{\ts{\td{\nabla}}{#1}}
+\newc{\da}{\td{\DA}}
+\newc{\tn}{\td{\nb}}
+\newc{\Gone}[1]{\overset{1}{\Ga}\ts{}{#1}} 
+\newc{\Gtwo}[1]{\overset{2}{\Ga}\ts{}{#1}}
+\newc{\Etwo}[1]{\overset{2}{G}\ts{}{#1}} % second order of Einstein tensor 
+\newc{\Rone}[1]{\overset{1}{R}\ts{}{#1}} 
+\newc{\Rtwo}[1]{\overset{2}{R}\ts{}{#1}} 
+%\newc{\TT}{\overset{TT}{=}} 
+\nc{\TT}{\mathrm{TT}}
+\newc{\hone}[1]{\overset{1}{h}\ts{}{#1}} 
+\newc{\htwo}[1]{\overset{2}{h}\ts{}{#1}} 
+\newcommand{\order}[1]{\mathcal{O}\left(#1\right)}
+\newcommand{\avg}[1]{\left \langle #1 \right \rangle}
+\nc{\GW}{\mathrm{GW}}
+
+\newcommand{\irm}{\ensuremath{\mathrm{i}}}
+\newcommand{\grm}{\ensuremath{\mathrm{g}}}
+\newcommand{\srm}{\ensuremath{\mathrm{s}}}
+\newcommand{\joe}[1]{{\color{red}Joe: #1}}
+
+\def\pheq{\phantom{=}}
+\newcommand{\Deqn}[1]{{Eq.~(\ref{#1})}}
+\newcommand{\Deqns}[1]{{Eqs.~(\ref{#1})}}
+\newcommand{\Ceqn}[1]{{Equation~(\ref{#1})}}
+\newcommand{\Dfig}[1]{{Fig.~\ref{#1}}}
+\newcommand{\beq}{\begin{equation}}
+    \newcommand{\eeq}{\end{equation}}
+\newcommand{\bea}{\begin{eqnarray}}
+    \newcommand{\eea}{\end{eqnarray}}
+%\newcommand{\tr}{{\mathop{\mathrm{tr}}\nolimits}}
+%\newcommand{\be}{\begin{equation}}
+    \newcommand{\ee}{\end{equation}}
+\newcommand{\omhat}{\hat{A_{\rm gw}^{2}}}
+\newcommand{\phat}{\hat{p}}
+\newcommand{\hplus}{h_+}
+\newcommand{\hcross}{h_{\times}}
+\newcommand{\infint}{\int_{-\infty}^{\infty}}
+%\newcommand{\lp}{\left(}
+%\newcommand{\rp}{\right)}
+\newcommand{\bb}{\begin{bmatrix}}
+    \newcommand{\eb}{\end{bmatrix}}
+\newcommand{\sigquant}{\frac{\sigma^2 \Delta t}{b f_H^{-\gamma}}}
+\newcommand{\invsigquant}{\frac{b f_H^{-\gamma}}{\sigma^2 \Delta t}}
+\DeclareMathOperator{\Tr}{Tr}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% other %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\half{{1\over 2}}
+
+\def\p{\partial}
+\def\ap{\alpha'}
+\def\({\left(}
+\def\){\right)}
+\def\[{\left[}
+\def\]{\right]}
+\def\Mpl{M_{\rm P}}
+
+\def\e{\begin{equation}}
+\def\q{\end{equation}}
+\def\m{\begin{eqnarray}}
+\def\n{\end{eqnarray}}
+
