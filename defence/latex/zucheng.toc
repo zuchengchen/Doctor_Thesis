@@ -1,0 +1,4 @@
+\beamer@sectionintoc {1}{引言}{6}{0}{1}
+\beamer@sectionintoc {2}{原初双黑洞的并合率}{10}{0}{2}
+\beamer@sectionintoc {3}{原初双黑洞产生的引力波背景}{13}{0}{3}
+\beamer@sectionintoc {4}{总结}{16}{0}{4}
